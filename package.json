@@ -1,0 +1,26 @@
+{
+  "name": "pipestack-wc",
+  "version": "0.1.0",
+  "description": "wc - word, line, and byte or character count",
+  "main": "index.js",
+  "bin": {
+    "pipestack-wc": "bin/pipestack-wc.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hola": "node bin/pipestack-wc.js  -t -h"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipestack-io/pipestack-wc.git"
+  },
+  "keywords": [
+    "wc"
+  ],
+  "author": "Pipestack.io",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/pipestack-io/pipestack-wc/issues"
+  },
+  "homepage": "https://github.com/pipestack-io/pipestack-wc#readme"
+}
