@@ -4,7 +4,7 @@
   "description": "wc - word, line, and byte or character count",
   "main": "index.js",
   "bin": {
-    "pipestack-wc": "bin/pipestack-wc.js"
+    "pipestack-wc": "bin/cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/pipestack-io/pipestack-wc/issues"
   },
-  "homepage": "https://github.com/pipestack-io/pipestack-wc#readme"
+  "homepage": "https://github.com/pipestack-io/pipestack-wc#readme",
+  "devDependencies": {
+    "eslint": "^6.5.1"
+  }
 }
