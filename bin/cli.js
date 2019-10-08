@@ -1,7 +1,4 @@
 #!/usr/bin/env node
-
 const wc = require('../lib/wc');
 
-const options = process.argv.slice(2).join(' ');
-
-wc.run(options, process.stdin);
+wc.run(process.argv.slice(2), process.stdin);
