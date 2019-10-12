@@ -17,7 +17,7 @@ test('An empty stream returns 0 lines', function(assert) {
 
 test('A stream with 10 lines separated by \\n returns 10 lines', function(assert) {
     // Given
-    const readable = utils.toReadable('./resources/10linesLF');
+    const readable = utils.toReadable('./resources/10linesLF.txt');
     const writable = utils.toWritable((result) => {
         // Then
         expect(result).toMatch(/^ {5}10/g);
@@ -30,7 +30,7 @@ test('A stream with 10 lines separated by \\n returns 10 lines', function(assert
 
 test('A stream with 10 lines separated by \\r\\n returns 10 lines', function(assert) {
     // Given
-    const readable = utils.toReadable('./resources/10linesCRLF');
+    const readable = utils.toReadable('./resources/10linesCRLF.txt');
     const writable = utils.toWritable((result) => {
         // Then
         expect(result).toMatch(/^ {5}10/g);
