@@ -7,7 +7,7 @@
     "pipestack-wc": "bin/cli.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "hola": "node bin/pipestack-wc.js  -t -h"
   },
   "repository": {
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/pipestack-io/pipestack-wc#readme",
   "devDependencies": {
-    "eslint": "^6.5.1"
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0"
   }
 }
