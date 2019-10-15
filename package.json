@@ -2,13 +2,10 @@
   "name": "pipestack-wc",
   "version": "0.1.0",
   "description": "wc - word, line, and byte or character count",
-  "main": "index.js",
-  "bin": {
-    "pipestack-wc": "bin/cli.js"
-  },
+  "main": "wc.js",
   "scripts": {
-    "test": "jest",
-    "hola": "node bin/pipestack-wc.js  -t -h"
+    "lint": "eslint .",
+    "test": "mocha --reporter spec --bail --check-leaks test/"
   },
   "repository": {
     "type": "git",
@@ -25,6 +22,7 @@
   "homepage": "https://github.com/pipestack-io/pipestack-wc#readme",
   "devDependencies": {
     "eslint": "^6.5.1",
-    "jest": "^24.9.0"
+    "mocha": "6.2.1",
+    "should": "13.2.3"
   }
 }
