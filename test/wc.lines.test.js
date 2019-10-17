@@ -1,4 +1,3 @@
-require('should');
 const utils = require('./utils');
 
 const wc = require('../lib/wc');
