@@ -1,10 +1,12 @@
-const fs = require('fs');
-const path = require('path');
 const stream = require("stream");
 const StringDecoder = require('string_decoder').StringDecoder;
 
-exports.toReadable = function(filePath) {
-    return fs.createReadStream(path.join(__dirname, filePath));
+exports.toReadable = function(text) {
+    const readable = new stream.Readable;
+    readable._read = () => {};
+    readable.push(text);
+    readable.push(null);
+    return readable;
 };
 
 exports.toWritable = function(stringCallback) {
