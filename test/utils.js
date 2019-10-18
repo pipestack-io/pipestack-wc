@@ -30,3 +30,9 @@ exports.toWritable = function(stringCallback) {
         }
     });
 };
+
+exports.failOnStdError = function() {
+    return exports.toWritable(() => {
+        ''.should.fail();
+    });
+};

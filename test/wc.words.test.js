@@ -13,6 +13,6 @@ describe('An empty stream', function() {
         });
 
         // When
-        wc('-l', readable, writable);
+        wc('-l', readable, writable, utils.failOnStdError());
     });
 });

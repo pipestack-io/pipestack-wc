@@ -62,3 +62,6 @@ typings/
 
 # IDE
 .idea
+
+pipestack-wc.js
+pipestack-wc.min.js

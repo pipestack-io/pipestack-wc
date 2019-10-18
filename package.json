@@ -4,7 +4,9 @@
   "description": "wc - word, line, and byte or character count",
   "main": "wc.js",
   "scripts": {
-    "lint": "eslint .",
+    "browserify": "browserify --standalone pipestack.wc lib/wc.js > pipestack-wc.js",
+    "browserify-min": "browserify --standalone pipestack.wc -p tinyify lib/wc.js > pipestack-wc.min.js",
+    "lint": "eslint lib/*",
     "test": "mocha --reporter spec --bail --check-leaks test/"
   },
   "repository": {
@@ -21,8 +23,10 @@
   },
   "homepage": "https://github.com/pipestack-io/pipestack-wc#readme",
   "devDependencies": {
+    "browserify": "^16.5.0",
     "eslint": "^6.5.1",
     "mocha": "6.2.1",
-    "should": "13.2.3"
+    "should": "13.2.3",
+    "tinyify": "^2.5.1"
   }
 }
