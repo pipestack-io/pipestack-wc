@@ -13,7 +13,7 @@ describe('An empty input', function() {
         });
 
         // When
-        const result = wc('-l', output);
+        const result = wc('', output);
         result.write(input);
         result.end();
     });
