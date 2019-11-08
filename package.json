@@ -7,7 +7,9 @@
     "browserify": "browserify --standalone pipestack.wc lib/wc.js > pipestack-wc.js",
     "browserify-min": "browserify --standalone pipestack.wc -p tinyify lib/wc.js > pipestack-wc.min.js",
     "lint": "eslint lib/*",
-    "test": "mocha --reporter spec --bail --check-leaks test/"
+    "test": "mocha --reporter spec --bail --check-leaks test/",
+    "compare-test": "mocha --reporter spec --bail --check-leaks compare-test/",
+    "compare-test-docker": "node ./compare-test/compare-tests-cli.js"
   },
   "repository": {
     "type": "git",
